@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Nasa Image Explorer</title>
-         <link rel="stylesheet" href="Style.css" />
-    </head>
-    <body>
-        <header>
-            <h1>Nasa Image Explorer</h1>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nasa Image Explorer</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Nasa Image Explorer</h1>
+    </header>
 
-        <main>
+    <main>
+      
+      <section id="controls">
+        <label for="dateInput">Select a Date:</label>
+        <input type="date" id="dateInput" />
+        <button id="fetchBtn">Get Image</button>
+      </section>
 
-            <section id="controls">
-                <label for="dateInput">Select a Date:</label>
-                <input type="date" id="dateInput" />
-                <button id="fetchBtn">Get Image</button>
+      
+      <section id="imageCard" class="card">
+        <h2 id="title">Image Title</h2>
+        <p id="date">Date</p>
+        <img id="image" src="" alt="NASA Astronomy Picture" />
+        <p id="explanation">Image explanation will appear here.</p>
 
-            </section>
+        
+        <button id="favoriteBtn"> Mark as Favorite</button>
+      </section>
 
-            <section id="imageCard" class="card">
-                <h2 id="title">Image Title</h2>
-                <p id="date">Date</p>
-                <img id="image" src="" alt="NASA Astronomy Picture" />
-                <p id="explanation">Image explanation will appear here.</p>
+      
+      <section id="notes" class="card">
+        <h3>Your Notes</h3>
+        <textarea id="noteText" placeholder="Write your thoughts about this image..." rows="4" cols="50"></textarea>
+        <br />
+        <button id="saveNoteBtn">Save Note</button>
+      </section>
 
-            </section>
-        </main>
-        <footer>
-            <p>Powered by NASA APOD API | Built by Dan Opere</p>
-        </footer>
-    </body>
+      
+      <section id="favorites" class="card">
+        <h3> Your Favorite Images</h3>
+        <ul id="favoritesList"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Powered by NASA APOD API | Built by Dan Opere</p>
+    </footer>
+  </body>
 </html>
