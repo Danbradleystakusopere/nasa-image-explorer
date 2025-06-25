@@ -52,4 +52,28 @@ document.addEventListener("DOMContentLoaded", () => {
     alert("Image saved to favorites!");
   });
 
+    const saveNoteBtn = document.getElementById("saveNoteBtn");
+  const notesInput = document.getElementById("notesInput");
+  const savedNoteDisplay = document.getElementById("savedNoteDisplay");
+
+  
+  const savedNote = localStorage.getItem("favoriteNote");
+  if (savedNote) {
+    savedNoteDisplay.textContent = "" + savedNote;
+  }
+
+  saveNoteBtn.addEventListener("click", () => {
+    const noteText = notesInput.value.trim();
+    if (!noteText) {
+      alert("Please write a note before saving.");
+      return;
+    }
+
+    localStorage.setItem("favoriteNote", noteText);
+    savedNoteDisplay.textContent = "" + noteText;
+    notesInput.value = "";
+    alert("Note saved!");
+  });
+
+
 
