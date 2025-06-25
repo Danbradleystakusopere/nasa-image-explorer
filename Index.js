@@ -30,4 +30,26 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Could not load image. Please try again later.");
       });
   });
+    const favoriteBtn = document.getElementById("favoriteBtn");
+
+  favoriteBtn.addEventListener("click", () => {
+    const title = document.getElementById("title").textContent;
+    const date = document.getElementById("date").textContent;
+    const imageUrl = document.getElementById("image").src;
+
+    if (!title || !imageUrl) {
+      alert("No image to favorite yet.");
+      return;
+    }
+
+    const favorite = {
+      title,
+      date,
+      imageUrl
+    };
+
+    localStorage.setItem("favoriteImage", JSON.stringify(favorite));
+    alert("Image saved to favorites!");
+  });
+
 
