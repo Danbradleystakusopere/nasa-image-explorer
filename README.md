@@ -19,7 +19,7 @@ Built with HTML, CSS, and JavaScript, this project showcases how to fetch and di
 
 
 
-## 🔧 How to Use
+##  How to Use
 
 1. Select a Date using the input field
 2. Click "Get Image"to fetch the NASA photo for that date
@@ -31,8 +31,8 @@ Built with HTML, CSS, and JavaScript, this project showcases how to fetch and di
 
 ## Live Demo
 
-[Click to view the live site](https://your-github-username.github.io/nasa-image-explorer)
 
+Click to view the live site: ( https://danbradleystakusopere.github.io/nasa-image-explorer/)
 
 
 ## Technologies Used
@@ -57,7 +57,8 @@ Built with HTML, CSS, and JavaScript, this project showcases how to fetch and di
 
 ##  Setup Instructions
 
- Clone the repository:
+ Clone the repository
 
-   bash
-   git clone https://github.com/your-username/nasa-image-explorer.git
+ ## License
+This project is licensed for educational purposes at Moringa School.
+© 2025 Dan Opere. 
