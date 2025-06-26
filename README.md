@@ -57,8 +57,9 @@ Click to view the live site: ( https://danbradleystakusopere.github.io/nasa-imag
 
 ##  Setup Instructions
 
- Clone the repository
+ git clone https://github.com/Danbradleystakusopere/nasa-image-explorer.git
+
 
  ## License
 This project is licensed for educational purposes at Moringa School.
-© 2025 Dan Opere. 
+
